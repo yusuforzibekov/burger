@@ -1,18 +1,10 @@
-# Final Project
+# Fundamentals of Web Development Final Project
 
-## Before we start
-The aim of this project is to create a web application that meets all the characteristics (features) listed in your proposal.  
+## Task Requirements
 
-Please know that you only need to implement the front-end part. The back end can be implemented if desired. Data can be stored locally. It is recommended to use JSON files, Firebase, or Apiary.  
-
-
-## Project Implementation
-To guide you through the process, the project implementation is divided into five main stages: 
-	Setup 
-	Web application development 
-	Project compilation 
-	Validation 
-	Submission 
-
-In each stage, you will find a list of required steps, evaluation criteria, and helpful resources to refer to if you have any questions. 
-
+1. Please, place all your `SCSS` styles to `src/styles` folder.
+2. Your main HTML page should be named `index.html` and be placed `src/index.html`.
+2. Root files for regular and mobile styles have to have names `style.scss` and `mobile.scss` and be placed inside `src/styles` folder. These names are used for automatic checks.
+3. All the result CSS file have to be in `dist` folder.
+   - result styles should be in `src/dist/style.css`
+   - result minified styles should be in `src/dist/style.min.css`
