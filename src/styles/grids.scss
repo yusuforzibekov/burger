@@ -19,11 +19,64 @@
   margin: 0 auto;
 }
 
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    width: calc(100% / 12 * #{$i});
-    padding: 0 15px;
-  }
+.col-1 {
+  width: var(--col-1);
+  padding: 0 15px;
+}
+
+.col-2 {
+  width: var(--col-2);
+  padding: 0 15px;
+}
+
+.col-3 {
+  width: var(--col-3);
+  padding: 0 15px;
+}
+
+.col-4 {
+  width: var(--col-4);
+  padding: 0 15px;
+}
+
+.col-5 {
+  width: var(--col-5);
+  padding: 0 15px;
+}
+
+.col-6 {
+  width: var(--col-6);
+  padding: 0 15px;
+}
+
+.col-7 {
+  width: var(--col-7);
+  padding: 0 15px;
+}
+
+.col-8 {
+  width: var(--col-8);
+  padding: 0 15px;
+}
+
+.col-9 {
+  width: var(--col-9);
+  padding: 0 15px;
+}
+
+.col-10 {
+  width: var(--col-10);
+  padding: 0 15px;
+}
+
+.col-11 {
+  width: var(--col-11);
+  padding: 0 15px;
+}
+
+.col-12 {
+  width: var(--col-12);
+  padding: 0 15px;
 }
 
 .flex-column {

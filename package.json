@@ -9,7 +9,7 @@
     "compile": "node-sass src/styles/style.scss src/dist/style.css",
     "min": "postcss src/dist/style.css -o src/dist/style.min.css",
     "prettier": "prettier --write src/styles/*.scss && prettier --write src/dist/*.css",
-    "lint": "stylelint ./src/styles/*.scss --fix && stylelint ./src/styles/*.scss",
+    "lint": "stylelint ./src/styles/*.scss --fix && stylelint ./src/styles/*.scss && eslint ./src/js/*.js --fix && eslint ./src/js/*.js",
     "prod": "npm run compile && npm run min && npm run prettier && npm run lint"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
+    "eslint": "^9.17.0",
     "final-project-js": "file:",
     "node-sass": "^9.0.0",
     "postcss": "^8.4.49",
