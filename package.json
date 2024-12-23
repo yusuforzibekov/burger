@@ -1,7 +1,33 @@
 {
+  "name": "final-project-js",
+  "version": "1.0.0",
+  "description": "Final Project JS from IT Park University",
+  "main": "index.js",
   "scripts": {
-    "postinstall": "cd ./test && npm i || true",
-    "test": "cd ./test && npm run test",
-    "build": "echo \"Dummy build script for Autocode\""
+    "test": "jest --reporters=jest-junit",
+    "build": "echo \"Dummy build script for Autocode\"",
+    "compile": "node-sass src/styles/style.scss src/dist/style.css",
+    "min": "postcss src/dist/style.css -o src/dist/style.min.css",
+    "prettier": "prettier --write src/styles/*.scss && prettier --write src/dist/*.css",
+    "lint": "stylelint ./src/styles/*.scss --fix && stylelint ./src/styles/*.scss",
+    "prod": "npm run compile && npm run min && npm run prettier && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://autocode.git.epam.com/yusufbek_orzibekov/final-project-js"
+  },
+  "author": "yusufbek_orzibekov",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "final-project-js": "file:",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "prefix": "^1.0.0",
+    "prettier": "^3.4.2",
+    "stylelint": "^16.12.0"
   }
 }

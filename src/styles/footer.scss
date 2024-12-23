@@ -1,0 +1,43 @@
+.footer {
+  padding: 40px 0;
+  background: $black;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__call {
+    font-size: 24px;
+    color: $phone-color;
+    font-family: $font-bold;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  &__link {
+    font-family: $font-thin;
+    transition: 0.5s;
+
+    &:hover {
+      color: $title-color;
+    }
+  }
+
+  &__copy {
+    color: $white;
+    text-align: center;
+  }
+
+  &__nav {
+    margin-bottom: 45px;
+  }
+}

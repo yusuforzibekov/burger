@@ -1,0 +1,87 @@
+/*--- Placeholders ---*/
+
+.header {
+    & #bg-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &-burger {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        cursor: pointer;
+        display: none;
+        background: $title-color;
+        border-radius: 5px;
+        z-index: 1;
+
+        &__item {
+            position: absolute;
+
+            height: 2px;
+            background: $white;
+            transition: 0.5s;
+
+            &:nth-child(1) {
+                width: 35%;
+                top: 20%;
+                left: 15%;
+            }
+
+            &:nth-child(2) {
+                width: 62%;
+                top: 50%;
+                left: 15%;
+            }
+
+            &:nth-child(3) {
+                width: 35%;
+                right: 22%;
+                bottom: 14%;
+            }
+        }
+    }
+
+    & .unmute-btn {
+        position: fixed;
+        transform: scale(2);
+        cursor: pointer;
+        user-select: none;
+        border-radius: 50%;
+        border: 1px solid $white;
+        left: 3%;
+        bottom: 5%;
+        background: $black;
+        z-index: 999;
+    }
+
+    & #top {
+        position: fixed;
+        right: 3%;
+        bottom: 5%;
+        color: $white;
+        font-size: 30px;
+        border-radius: 50%;
+        border: 2px solid $white;
+        width: 40px;
+        height: 40px;
+        background: $black;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-align: center;
+        z-index: 999;
+        transform: scale(0);
+        transition: 0.5s;
+    }
+}

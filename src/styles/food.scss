@@ -1,0 +1,113 @@
+main {
+  background: $black;
+
+  & .food {
+    padding: 50px 0;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 70px auto;
+      gap: 30px;
+    }
+
+    &__link {
+      font-size: 24px;
+      font-family: $font-bold;
+      color: $tabs-color;
+      position: relative;
+
+      &:hover,
+      &:focus,
+      &.active {
+        color: $title-color;
+
+        &::before {
+          width: 100%;
+          background: $title-color;
+        }
+      }
+
+      &::before {
+        content: ' ';
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background: $tabs-color;
+        transition:
+          opacity 0.5s,
+          width 0.3s;
+      }
+    }
+
+    &__card {
+      margin-bottom: 50px;
+    }
+
+    &__desc {
+      padding-top: 35px;
+
+      &-title {
+        font-size: 24px;
+        font-family: $font-black;
+        color: $title-color;
+        margin-bottom: 18px;
+      }
+
+      &-txt {
+        line-height: 24px;
+        color: $food-txt;
+      }
+    }
+
+    &__img {
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        & .food__img-txt {
+          top: 0;
+        }
+
+        & .food__img-price {
+          bottom: -25%;
+        }
+      }
+
+      & img {
+        display: block;
+      }
+
+      &-price {
+        color: $white;
+        font-size: 24px;
+        position: absolute;
+        bottom: 0;
+        padding: 22px 60px;
+        background: $bg-light;
+        transition: 0.5s;
+      }
+
+      &-txt {
+        font-size: 24px;
+        font-family: $font-bold;
+        color: $white;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $bg-light;
+        transition: 0.5s;
+      }
+    }
+  }
+}

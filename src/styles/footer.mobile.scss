@@ -1,0 +1,61 @@
+@media screen and (max-width: 830px) {
+  .footer {
+    &__list {
+      width: $col-12;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    &__menu {
+      flex-direction: column;
+    }
+
+    &__logo {
+      margin-bottom: 10px;
+    }
+
+    &__list {
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    &__item {
+      margin: 0 5px 5px;
+    }
+  }
+}
+
+@media (max-width: 412px) {
+  .food {
+    &__list {
+      justify-content: space-around;
+    }
+
+    &__item {
+      margin: 0 15px;
+    }
+
+    &__card {
+      width: $col-12;
+    }
+
+    &__img-price {
+      font-size: 30px;
+      padding: 22px 60px;
+    }
+
+    &__desc-title {
+      font-size: 24px;
+    }
+
+    &__desc-txt {
+      font-size: 18px;
+    }
+
+    &__copy {
+      font-size: 14px;
+    }
+  }
+}

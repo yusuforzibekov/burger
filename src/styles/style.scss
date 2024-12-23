@@ -1,0 +1,55 @@
+@import 'kits/fonts';
+@import 'kits/variables';
+@import 'kits/mixins';
+@import 'kits/_placeholders';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: $font-regular;
+  scroll-behavior: smooth;
+}
+
+input:focus,
+button:focus,
+button:active,
+textarea:focus,
+a:focus,
+a:active,
+a {
+  outline: none;
+}
+
+a {
+  color: $white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 3px solid $title-color;
+  border-radius: 5px;
+  padding: 8px 18px;
+  background: $bg-logo;
+  box-shadow: $shadow;
+  color: $white;
+  z-index: 3;
+}
+
+@import 'grids';
+
+@import 'header';
+
+@import 'food';
+
+@import 'recipe';
+
+@import 'contact';
+
+@import 'footer';
+
+@import 'mobile';

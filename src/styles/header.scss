@@ -1,0 +1,66 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &__item {
+    padding: 38px 36px;
+    transition: background 0.5s;
+
+    &:hover {
+      background: $bg-light;
+
+      & .header__link {
+        color: $white;
+      }
+    }
+  }
+
+  &__link {
+    color: $title-color;
+    transition: color 0.5s;
+    font-size: 20px;
+    font-family: $font-regular;
+  }
+
+  &__title {
+    font-size: 72px;
+    font-family: $font-black;
+    color: $title-color;
+    text-transform: uppercase;
+  }
+
+  &__span {
+    font-size: 36px;
+    color: $title-color;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+    display: inline-block;
+  }
+
+  &__txt {
+    color: $white;
+    font-size: 18px;
+    margin-bottom: 75px;
+  }
+
+  &__price {
+    font-size: 60px;
+    font-family: $font-thin;
+    padding: 30px 90px;
+    background: $bg-light;
+    color: $white;
+    width: max-content;
+  }
+}

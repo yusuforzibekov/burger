@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGER</title>
+    <!-- Linking Styles -->
+    <link rel="stylesheet" href="dist/style.css">
+    <!-- Linking Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icon.png">
+</head>
+
+<body>
+    <header class="header">
+        <video autoplay muted loop id="bg-video">
+            <source src="assets/video/bg_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <a class="unmute-btn" id="unmute-btn">🔇</a>
+        <div class="container">
+            <div class="row mh-100 flex-column">
+                <div class="col-12">
+                    <nav class="header__nav">
+                        <a href="" class="header__logo logo">street88</a>
+                        <div class="header-burger">
+                            <span class="header-burger__item"></span>
+                            <span class="header-burger__item"></span>
+                            <span class="header-burger__item"></span>
+                        </div>
+                        <ul class="header__list d-flex">
+                            <li class="header__item">
+                                <a href="#menu" class="header__link">Menu</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#about" class="header__link">About</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#contact" class="header__link">Contacts</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Cart 🛒</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 flex-grow d-flex align-items-center">
+                    <div class="header__content">
+                        <h1 class="header__title">Fresh Gamburger</h1>
+                        <span class="header__span">beef</span>
+                        <p class="header__txt">
+                            Fresh crispy bun, lettuce leaves, pickled cucumber with onions and a small cutlet flavored
+                            with mayonnaise and ketchup - this is the classic portrait of a hamburger, the most common
+                            "quick" food in the United States, from which poisoning tens of thousands of Americans find
+                            themselves in hospital beds every day
+                        </p>
+                        <p class="header__price">14,500 UZS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="top">↑</div>
+    </header>
+    <main id="menu">
+        <section class="food">
+            <div class="container">
+                <ul class="row food__list">
+                    <li class="food__item">
+                        <a href="#" class="food__link active" data-type="All">All</a>
+                    </li>
+                    <li class="food__item">
+                        <a href="#" class="food__link" data-type="Gamburgers">Gamburgers</a>
+                    </li>
+                    <li class="food__item">
+                        <a href="#" class="food__link" data-type="Hot-dogs">Hot-dogs</a>
+                    </li>
+                    <li class="food__item">
+                        <a href="#" class="food__link" data-type="Pizza">Pizza</a>
+                    </li>
+                    <li class="food__item">
+                        <a href="#" class="food__link" data-type="Bevarages">Bevarages</a>
+                    </li>
+                    <li class="food__item">
+                        <a href="#" class="food__link" data-type="Juice">Juice</a>
+                    </li>
+                </ul>
+                <div class="row food__cards" data-type="All">
+                    <div class="col-4 food__card" data-type="Gamburgers">
+                        <div class="food__img">
+                            <img src="assets/images/burger.png" alt="">
+                            <p class="food__img-price">14,500 UZS</p>
+                            <a class="food__img-txt" href="">Add to cart</a>
+                        </div>
+                        <div class="food__desc">
+                            <h3 class="food__desc-title">COMBO BURGER</h3>
+                            <p class="food__desc-txt">Fresh crispy bun, lettuce leaves, pickled cucumber with onions and
+                                a small cutlet flavored with mayonnaise and ketchup</p>
+                        </div>
+                    </div>
+                    <div class="col-4 food__card" data-type="Hot-dogs">
+                        <div class="food__img">
+                            <img src="assets/images/hot-dog.png" alt="">
+                            <p class="food__img-price">12,000 UZS</p>
+                            <a class="food__img-txt" href="">Add to cart</a>
+                        </div>
+                        <div class="food__desc">
+                            <h3 class="food__desc-title">CLASSIC HOT-DOG</h3>
+                            <p class="food__desc-txt">Enjoy a soft, freshly baked bun holding a savory sausage grilled
+                                to perfection. It is dressed with a smooth layer of mustard and sweet ketchup, making it
+                                a simple yet classic delight for any snack or meal.</p>
+                        </div>
+                    </div>
+                    <div class="col-4 food__card" data-type="Pizza">
+                        <div class="food__img">
+                            <img src="assets/images/pizza.png" alt="">
+                            <p class="food__img-price">50,000 UZS</p>
+                            <a class="food__img-txt" href="">Add to cart</a>
+                        </div>
+                        <div class="food__desc">
+                            <h3 class="food__desc-title">PEPPERONI PIZZA</h3>
+                            <p class="food__desc-txt">Features a crispy crust generously layered with a tomato base,
+                                gooey mozzarella cheese, and slices of spicy pepperoni. This crowd-pleasing pizza
+                                delivers a bold and irresistible taste in every bite.</p>
+                        </div>
+                    </div>
+                    <div class="col-4 food__card" data-type="Bevarages">
+                        <div class="food__img">
+                            <img src="assets/images/tea.png" alt="">
+                            <p class="food__img-price">7,000 UZS</p>
+                            <a class="food__img-txt" href="">Add to cart</a>
+                        </div>
+                        <div class="food__desc">
+                            <h3 class="food__desc-title">ICED TEA</h3>
+                            <p class="food__desc-txt">A cool and refreshing beverage available in lemon, peach, or mint
+                                flavors. Served in a 500ml bottle, it's a perfect choice for a hot day or a light meal
+                                accompaniment.</p>
+                        </div>
+                    </div>
+                    <div class="col-4 food__card" data-type="Juice">
+                        <div class="food__img">
+                            <img src="assets/images/juice.png" alt="">
+                            <p class="food__img-price">10,000 UZS</p>
+                            <a class="food__img-txt" href="">Add to cart</a>
+                        </div>
+                        <div class="food__desc">
+                            <h3 class="food__desc-title">APPLE JUICE</h3>
+                            <p class="food__desc-txt">Made from fresh, crisp apples, this 300ml juice is a pure and
+                                wholesome drink, offering a naturally sweet flavor with no added sugars.</p>
+                        </div>
+                    </div>
+                    <div class="col-4 food__card" data-type="Bevarages">
+                        <div class="food__img">
+                            <img src="assets/images/sauce.png" alt="">
+                            <p class="food__img-price">2,000 UZS</p>
+                            <a class="food__img-txt" href="">Add to cart</a>
+                        </div>
+                        <div class="food__desc">
+                            <h3 class="food__desc-title">KETCHUP</h3>
+                            <p class="food__desc-txt">A classic and tangy sauce made from ripe tomatoes, vinegar, and a
+                                blend of spices. It's the perfect complement to burgers, fries, and any meal that needs
+                                a touch of sweetness and acidity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="recipe">
+            <div class="container">
+                <h2 class="recipe__title">Unique recipe</h2>
+                <p class="recipe__txt">A hamburger is a type of sandwich that consists of a fried chopped cutlet served
+                    inside a cut round loaf. It is usually accompanied by a variety of condiments such as lettuce,
+                    ketchup and mayonnaise, slices of pickled cucumber, tomato or zucchini, raw or fried onions.</p>
+                <p class="recipe__txt">
+                    The most common "quick" food in the United States, the hamburger is far from American in origin.
+                    Scientists attribute its authorship to the Scythian nomads, who placed fried meat between two slices
+                    of bread. And the "king" of fast food arrived in the New World together with German immigrants: it
+                    was named, by the way, in honor of Hamburg, the second largest city in Germany. The official date of
+                    the sale of the first hamburger in the United States is July 27, 1900 - on that day, a New Haven
+                    deli offered city residents to buy a ketchup-flavored cutlet “sandwiched” between two pieces of
+                    bread. Initially, such food was the prerogative of the poor, but soon “fast food” establishments
+                    began to open all over the country, in which, not only food, but also service and customer change
+                    were fast. These catering establishments set a course for operational baby food - and for the always
+                    busy working class at that time, they became the best solution to the problem of where and how to
+                    feed the children quickly.
+                </p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="contact__title">Our branches</h2>
+            <iframe class="contact__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2119.404593891303!2d69.31377123690221!3d41.302538744527126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef51ea93c6349%3A0xf0c3799c97ac3bdd!2sIT%20Park%20University!5e0!3m2!1sen!2s!4v1734621580147!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <div class="footer__menu">
+                    <a href="#" class="footer__logo logo">street88</a>
+                    <a href="tel:+998997902560" class="footer__call">+998 99 790 25 60</a>
+                </div>
+                <ul class="footer__list col-8">
+                    <li class="footer__item"><a href="#" class="footer__link">Menu</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Contacts</a></li>
+                    <li class="footer__item"><a href="https://instagram.com/" class="footer__link">Instagram</a></li>
+                    <li class="footer__item"><a href="https://facebook.com/" class="footer__link">Facebook</a></li>
+                    <li class="footer__item"><a href="https://telegram.org/" class="footer__link">Telegram</a></li>
+                </ul>
+            </nav>
+            <p class="footer__copy">Developed for educational purposes © ITPU 2024</p>
+        </div>
+    </footer>
+
+    <!-- Linking Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

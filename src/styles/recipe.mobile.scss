@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .recipe {
+    &__txt {
+      text-align: justify;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .recipe {
+    padding-bottom: 50px;
+  }
+}

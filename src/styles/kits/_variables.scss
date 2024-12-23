@@ -1,0 +1,37 @@
+/*--- Variables ---*/
+
+// Fonts
+$font-bold: 'Raleway-Bold';
+$font-black: 'Raleway-Black';
+$font-light: 'Raleway-Light';
+$font-regular: 'Raleway-Regular';
+$font-thin: 'Raleway-Thin';
+$font-medium: 'Raleway-Medium';
+
+// Colors
+$title-color: #69cf17;
+$bg-light: rgba(106, 207, 23, 0.7);
+$bg-dark: rgba(78, 159, 13, 0.7);
+$bg-lighter: rgba(106, 207, 23, 0.3);
+$bg-logo: #4e9f0d;
+$shadow: inset 0px 5px 5px 0px rgba(30, 30, 30, 0.15);
+$tabs-color: #7a7a7a;
+$white: #fff;
+$black: #000;
+$phone-color: #4e9f0d;
+$food-txt: #dedede;
+$header-nav: rgba(0, 0, 0, 0.8);
+
+// Grids
+$col-1: calc(100% / 12);
+$col-2: calc(100% / 12 * #{2});
+$col-3: calc(100% / 12 * #{3});
+$col-4: calc(100% / 12 * #{4});
+$col-5: calc(100% / 12 * #{5});
+$col-6: calc(100% / 12 * #{6});
+$col-7: calc(100% / 12 * #{7});
+$col-8: calc(100% / 12 * #{8});
+$col-9: calc(100% / 12 * #{9});
+$col-10: calc(100% / 12 * #{10});
+$col-11: calc(100% / 12 * #{11});
+$col-12: 100%;
