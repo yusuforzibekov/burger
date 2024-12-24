@@ -1,4 +1,4 @@
-// PostCSS configruation
+// PostCSS configuration
 module.exports = (cfg) => {
 
     const devMode = (cfg.env === 'development');
